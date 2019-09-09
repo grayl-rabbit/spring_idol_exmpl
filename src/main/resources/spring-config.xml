@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--   самое простое объявление бина, используется конструктор по умолчанию(3 мячика)-->
+<!--   <bean id="duke" class="entity.Juggler" />-->
+
+<!--   передаем доп инфо по созданию объекта(15 мячиков)-->
+   <bean id="duke" class="entity.Juggler" >
+      <constructor-arg value="15" />
+   </bean>
+
+</beans>
